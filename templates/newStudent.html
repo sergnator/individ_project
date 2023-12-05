@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <script src="{{ url_for('static', filename='js/registr.js') }}"></script>
+</head>
+<body>
+    <form class="login">
+        <h1 id="reg">Создайте студента</h1>
+        <input type="text" placeholder="username" autocomplete="off" id="username">
+        <input type="password" placeholder="password" id="password">
+        <input type="password" placeholder="confirm password" id="confirm-password">
+        <button type="button" onclick="Onclick()">регистрация</button>
+        
+    </form>
+</body>
+</html>

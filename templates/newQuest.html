@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="{{url_for('static', filename='js/newQuest.js')}}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/newPost2.css') }}">
+</head>
+<div class="header">
+    <h1>Barbossik Posts</h1>
+</div>
+<body>
+    <div class="user-info">
+        <h1 id="username">Сергей</h1>
+        
+        <div class="hrefs">
+            <a class="newPost" href="/view/main">Главная</a> <br>
+            <a class="exit" href="/view/exit">Выход</a>
+        </div>
+    </div>
+    <form>
+        <textarea id="content" placeholder="text of post..."></textarea>
+        <button onclick="Onclick()" type="button">Отправить</button>
+    </form>
+</body>
+</html>
